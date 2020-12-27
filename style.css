@@ -7,14 +7,16 @@
 body{
     background-size: cover;
     z-index:-7;   
-    
+    height:100%;
+    width: 100%;
+    background-repeat: no-repeat;
     
 }
 
 body:before{
     content:'';
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
     position: absolute;
     left:0;
     top:0;
@@ -34,8 +36,8 @@ body::after{
     top:0; 
     bottom:0; 
     right:0; 
-    height:auto;
-    width:auto;
+    height:100%;
+    width:100%;
     position:absolute;
     
 }
@@ -46,11 +48,11 @@ body::after{
     z-index: 9999;
     
     width:320px;
-    height:410px;
+    height:395px;
     margin-left: 12%;
     margin-right: 15%;
     
-    margin:100px auto;
+    margin:10px auto;
     background-color: #a01;
     color: #fff;
     font-family: 'Dancing Script', cursive;
@@ -67,6 +69,36 @@ p{
    
 }
 
+.music{
+    position:absolute;
+    top:22%;
+    left:0;
+    right:0;
+    margin:0 auto;
+    z-index:9999;
+}
+
+.btn_music{
+    background-color: transparent;
+    color: #fff;
+    font-size: 85px;
+    border:none;
+    display:block;
+    margin: 0 auto;
+    opacity: .3;
+    transition: all linear .2s;
+    cursor: pointer;
+}
+
+.btn_music:hover{
+    opacity:1;
+    border:none;
+}
+
+.fa-pause-circle{
+    display: none;
+}
+
 .ball{
     height:30px;
 }
@@ -75,7 +107,7 @@ p{
     height: 32px;
 }
 .star{
-    height:45px;
+    height:50px;
 }
 
 .star1{
@@ -102,6 +134,8 @@ p{
     animation-name: fall;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    display:none;
+    
 }
 .layer1 {
     width: 1.5rem;
@@ -142,38 +176,41 @@ p{
 /* MEDIA QUERY */
 @media only screen and (max-width:399px){
     body{
-        height: 100%;
+        height: 0 auto;
         width:100%;
         background-size:cover;
+        background-repeat: no-repeat;
     }
     
     .container{
-       margin:10px auto;
-
+       margin:3% auto;
+       
    }
 }
 
-@media only screen and(max-width:520px){
+@media only screen and(max-width:599px){
     body{
-        height:100%;
+        height:0 auto;
         width:100%;
         background-size:cover;
+        background-repeat: no-repeat;
     }
    
     .container{
-        margin:10px auto;
+        margin:3% auto;
     }
 }
 
 @media only screen and (min-width:899px){
     body{
-        height: 100%;
+        height: 0 auto;
         width:100%;
         background-size:cover;
+        background-repeat: no-repeat;
     }
     
     .container{
-        margin:15% auto;
+        margin:8% auto;
     }
 }
 
