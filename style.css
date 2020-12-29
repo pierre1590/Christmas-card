@@ -75,7 +75,7 @@ p{
     left:0;
     right:0;
     margin:0 auto;
-    z-index:9999;
+    z-index:200;
 }
 
 .btn_music{
@@ -85,18 +85,18 @@ p{
     border:none;
     display:block;
     margin: 0 auto;
-    opacity: .3;
+    opacity: .1;
     transition: all linear .2s;
     cursor: pointer;
+    outline: none;
 }
 
 .btn_music:hover{
     opacity:1;
-    border:none;
-}
+}   
 
 .fa-pause-circle{
-    display: none;
+    display:hide;
 }
 
 .ball{
